@@ -31,6 +31,22 @@ Use a custom RPC:
 Output as JSON:
    python app.py --block 21000000 --json
 
+Adjust timeout for slow nodes:
+   python app.py --block 21000000 --timeout 60
+
+Analyze a block on Polygon:
+   python app.py --rpc https://polygon-rpc.com --block 55000000
+
+Run multiple blocks in a loop (example shell):
+   for i in {21000000..21000005}; do python app.py --block $i; done
+
+Redirect JSON output to file:
+   python app.py --block 21000000 --json > blockstats.json
+
+Compare blocks between two RPC providers:
+   python app.py --rpc https://mainnet.infura.io/v3/YOUR_KEY --block 21000000
+   python app.py --rpc https://eth.llamarpc.com --block 21000000
+
 ## Example Output
 🕒 Timestamp: 2025-11-08T14:45:19.312Z  
 🔧 zk-blockstats-soundness  
