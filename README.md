@@ -1,4 +1,3 @@
-# README.md
 # zk-blockstats-soundness
 
 ## Overview
@@ -52,6 +51,10 @@ Output as JSON:
 - **Performance Insight:** Identify blocks that are under-utilized or congested.  
 - **Multi-Network Support:** Works with Ethereum, Polygon, Base, Arbitrum, Optimism, and private devnets.  
 - **Security Tip:** Always use a trusted RPC endpoint for audit operations.  
+- **Data Accuracy:** Block timestamps are reported in UTC for consistent time-based analysis across nodes.  
+- **Automation Ready:** JSON output integrates with Prometheus, Datadog, or custom CI systems for live monitoring.  
+- **Cross-Layer Analysis:** You can compare L1 and L2 block utilization to understand rollup efficiency.  
+- **Future Extensions:** Planned additions include tracking base fees, blob gas metrics (EIP-4844), and validator participation rates.  
 - **Exit Codes:**  
   - `0` → Success  
   - `2` → RPC or block fetch error.  
